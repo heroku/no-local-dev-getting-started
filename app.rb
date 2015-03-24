@@ -5,21 +5,27 @@ require 'sinatra/activerecord'
 require './environments'
 
 
-class Contact < ActiveRecord::Base
+get "/" do
+  erb :home
 end
 
 
-get "/" do
+class Contact < ActiveRecord::Base
+  self.table_name = 'connect.contact'
+end
+
+get "/contacts" do
   @contacts = Contact.all
-  erb :"index"
+  erb :index
 end
 
 get "/create" do
-  CREATE_URL = 'https://connect.heroku.com/dashboard-next/create-connection?create='
-  match = /(.*?)\.herokuapp\.com/.match(x)
-  if match[1]
-    redirect to(CREATE_URL + app_name)
+  CREATE_URL = 'https://connect.heroku.com/dashboard-next/create-connection'
+  match = /(.*?)\.herokuapp\.com/.match(request.host)
+  if match && match[1]
+    redirect to(CREATE_URL + "?create=" + match[1])
   else
     redirect to(CREATE_URL)
+  end
 end
 
