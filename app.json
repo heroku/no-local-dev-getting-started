@@ -1,9 +1,9 @@
 {
     "name": "Getting Started No Code",
-    "description": "A basic app showing the components necessary for Heroku Connect. Just click 'View it' at the bottom once you've deployed to continue setup.",
+    "description": "A basic app showing Heroku, and Heroku Connect, supporting a no-local-dev Getting Started tutorial on Dev Center",
     "logo": "https://raw.githubusercontent.com/heroku/nocoding-getting-started/master/connect-logo.png",
-    "website": "https://devcenter.heroku.com/start",
-    "repository": "https://github.com/heroku/nocoding-getting-started",
+    "website": "https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev",
+    "repository": "https://github.com/heroku/no-local-dev-getting-started",
     "success_url": "/",
     "addons": ["heroku-postgresql", "herokuconnect:demo"]
 }
