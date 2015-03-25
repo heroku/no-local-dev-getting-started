@@ -4,6 +4,6 @@
     "logo": "https://raw.githubusercontent.com/heroku/nocoding-getting-started/master/connect-logo.png",
     "website": "https://devcenter.heroku.com/start",
     "repository": "https://github.com/heroku/nocoding-getting-started",
-    "success_url": "/create",
+    "success_url": "/",
     "addons": ["heroku-postgresql", "herokuconnect:demo"]
 }
