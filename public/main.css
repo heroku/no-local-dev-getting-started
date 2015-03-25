@@ -14,8 +14,47 @@
   text-align: center;
 }
 
+.site-header {
+  background: #333;
+  color: white;
+  border-bottom: 1px solid #222;
+  padding: 1.1em 1em .9em;
+  font-weight: 600;
+  font-size: .9em;
+}
+
+  .site-header a {
+    display: inline-block;
+    color: #f7f7f7;
+  }
+
+  #site-id {
+    position: relative;
+    padding-left: 26px;
+    opacity: .9;
+  }
+
+    #site-id:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 18px;
+      height: 18px;
+      top: 50%;
+      left: 0;
+      margin-top: -11px;
+      background: url(img/icon-home.svg) no-repeat;
+      opacity: .4;
+    }
+
+    #site-id:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+
+
 .banner {
-  padding: 2em;
+  padding: 1em 2em 2em;
   margin: 2em auto 3em;
   background: #eee;
   border-radius: 4px;
