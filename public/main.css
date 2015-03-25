@@ -1,1 +1,78 @@
-/* Placeholder for CSS */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.banner {
+  padding: 2em;
+  margin: 2em auto 3em;
+  background: #eee;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+hr {
+  margin: 3em 0;
+  border: 0;
+  height: 1px;
+  background: #ddd;
+}
+
+a {
+  color: #2170E7;
+  text-decoration: none;
+}
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a.btn {
+    display: inline-block;
+    background: #7956AB;
+    padding: .5em 1.5em .4em;
+    color: white;
+    line-height: 1.5;
+    border-radius: 4px;
+  }
+
+    a.btn:hover {
+      text-decoration: none;
+      background: #8162A5;
+    }
+
+p {
+  line-height: 1.4;
+}
+
+table {
+  margin: 2em auto 3em;
+  width: 100%;
+}
+
+  td,
+  th {
+    border: 1px solid #ccc;
+    padding: .5em;
+  }
+
+  th {
+    background: #444;
+    border-color: #222;
+    text-align: left;
+    color: white;
+  }
+
+  tr:nth-child(odd) {
+    background: #F4F4F4;
+  }
