@@ -1,13 +1,19 @@
-<table>
- <tr>
-    <th>First Name</th><th>Last Name</th><th>Email</th>
- </tr>
+<div class="container">
 
- <% @contacts.each do |contact| %>
- <tr>
-    <td><%= contact.firstname %></td>
-    <td><%= contact.lastname %></td>
-    <td><%= contact.email %></td>
- </tr>
- <% end %>
-</table>
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+    </tr>
+
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.firstname %></td>
+        <td><%= contact.lastname %></td>
+        <td><%= contact.email %></td>
+      </tr>
+    <% end %>
+  </table>
+
+</div>

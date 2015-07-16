@@ -1,27 +1,41 @@
-<div class="banner center">
-  <h2>Welcome to your Getting Started demo app!</h2>
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="images/lang-logo.png">
+    </a>
+    <h1>Getting Started on Heroku with Heroku Connect</h1>
+    <p>This is a sample application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform and Heroku Connect.</p>
+    <a type="button" class="btn btn-lg btn-default" href="/create"><span class="glyphicon glyphicon-flash"></span> Connect with your Salesforce Org</a>
+    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/no-local-dev-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
+  </div>
 </div>
-
-<div>
-
-  <h3>About</h3>
-  <p>This application was deployed using a Heroku Button.  It lives on the web now, at this URL, and is accessible to the public.</p>
-
-  <p>You probably deployed it from the <a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev#introduction">Getting Started on Heroku with Heroku Connect</a> article, or the Heroku Button in its <a href="https://github.com/heroku/no-local-dev-getting-started">source code repository</a>.</p>
-
-  <h3>Next Steps</h3>
-
-  <p>After reading to the appropriate step in the tutorial, <a href="/create">connect this app to your Salesforce Org</a>.</p>
-
-  <!-- <a href="/create" class="btn">Connect to Salesforce</a> -->
-
-  <h3>References</h3>
-
-  <ul>
-    <li><a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev#introduction">Getting Started on Heroku with Heroku Connect</a> will show you how to manage, deploy and modify this app</li>
-    <li>The <a href="https://devcenter.heroku.com/">Heroku Dev Center</a> contains documentation and tutorials on using Heroku</li>
-  </ul>
+<div class="container">
+  <div class="alert alert-info text-center" role="alert">
+    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev" class="alert-link">Getting Started on Heroku with Heroku Connect</a> tutorial.
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-info-sign"></span> How this tutorial works</h3>
+      <ul>
+        <li>This app was deployed to Heroku by clicking the <a href="https://github.com/heroku/no-local-dev-getting-started">Heroku Button</a> in the <a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">tutorial</a>.</li>
+        <li>Heroku Button transfers the source code for the application, transfers any app dependencies, builds and deploys the app on Heroku, and provisions a web domain for it too.</li>
+        <li>The app will also provision a Heroku Postgres database, and a Heroku Connect add-on, one of over <a href="https://elements.heroku.com/addons">150 add-on services</a>.</li>
+        <li>Heroku Connect provides seamless data synchronisation between a Heroku Postgres database and a Salesforce Org.  Clicking the "Connect with your Salesforce Org" configures Heroku Connect to perform this sync. </li>
+      <li>Check out the <a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">Getting Started</a> guide to learn more!</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
+      <ul>
+        <li><a href="https://www.heroku.com/home">Heroku</a></li>
+        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
+        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">Getting Started on Heroku with Heroku Connect</a></li>
+        <li><a href="https://devcenter.heroku.com/articles/herokuconnect">Heroku Connect</a></li>
+      </ul>
+    </div>
+  </div> <!-- row -->
+   <div class="alert alert-info text-center" role="alert">
+    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku and Heroku Connect, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
+  </div>
 </div>
-
-
-
