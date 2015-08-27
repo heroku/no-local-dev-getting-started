@@ -20,11 +20,8 @@ end
 #end
 
 get "/create" do
-  CREATE_URL = 'https://connect.heroku.com/dashboard-next/create-connection'
+  dashboard_url = 'https://dashboard.heroku.com/'
   match = /(.*?)\.herokuapp\.com/.match(request.host)
-  if match && match[1]
-    redirect to(CREATE_URL + "?create=" + match[1])
-  else
-    redirect to(CREATE_URL)
-  end
+  dashboard_url << "apps/#{match[1]}/resources" if match && match[1]
+  redirect to(dashboard_url)
 end
