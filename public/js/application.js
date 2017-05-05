@@ -31,21 +31,7 @@ function myMove() {
           direction='right'
         }
       }
-      // if (tpos <= 300 ) {
-      //   pos++;
-      //   tpos=pos;
-      //   lpos=pos;
-      // } else if(lpos > 0) {
-      //   tpos=301;
-      //   lpos--;
-      // } else if(tpos > 0){
-      //   tpos--
-      // } else {
-      //   pos=0;
-      //   lpos=0;
-      //   tpos=0;
-      // }
-      console.log(pos+' '+tpos +' '+lpos)
+      console.log(pos+' '+tpos +' '+lpos);
       elem.style.top = tpos + 'px';
       elem.style.left = lpos + 'px';
     }

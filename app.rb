@@ -15,8 +15,6 @@ get "/cowsay" do
   @character = "Cow"
   @message = "Hello"
   erb :'/cowsay/_cowsay'
-
-  # '<pre>' + Cowsay.say("Hello", "Cow") +'</pre>'
 end
 
 get "/cowsay/all" do
@@ -29,10 +27,15 @@ get "/cowsay/all" do
     response
 end
 get "/cowsay/random/:string" do
-  '<pre>' + Cowsay.random_character.say(params[:string]) + '</pre>'
+ @character = Cowsay.random_character.class.to_s.split(':')[-1]
+  @message = params[:string]
+  erb :'/cowsay/_cowsay'
 end
+
 get "/cowsay/:character/:string" do
-  '<pre>' + Cowsay.say(params[:string], params[:character]) +'</pre>'
+  @character = params[:character]
+  @message = params[:string]
+  erb :'/cowsay/_cowsay'
 end
 
 class Contact < ActiveRecord::Base
