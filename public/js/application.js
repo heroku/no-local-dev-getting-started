@@ -4,7 +4,6 @@ function myMove() {
   var id = setInterval(frame, 5);
   var direction = "right";
   function frame() {
-    debugger;
     console.log(pos+' '+tpos +' '+lpos)
     if (pos == 350) {
       clearInterval(id);
