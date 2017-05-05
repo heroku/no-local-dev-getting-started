@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Getting Started on Heroku</title>
+    <title>JuanZ Heroku App</title>
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <link href="/main.css" type="text/css" media="all" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -9,6 +9,24 @@
     <script type="text/javascript" src="/js/application.js"></script>
   </head>
   <body>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '251324885341819',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
     <nav class="navbar navbar-default navbar-static-top navbar-inverse">
       <div class="container">
         <ul class="nav navbar-nav">
@@ -44,6 +62,11 @@
     </nav>
 
     <%= yield %>
-
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
   </body>
 </html>
