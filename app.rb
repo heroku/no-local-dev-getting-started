@@ -11,6 +11,9 @@ get "/" do
   erb :home
 end
 
+get "/facebook" do
+  erb :facebook
+end
 get "/cowsay" do
   @character = "Cow"
   @message = "Hello"
