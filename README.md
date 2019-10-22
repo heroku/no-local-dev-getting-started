@@ -1,17 +1,16 @@
-# nocoding-getting-started
+# no-local-dev-getting-started
 
-**Warning - under active development**
+This application that can be used to sync (and then view) data from Salesforce using Heroku Connect.
 
-This is a simple application that can be used to sync (and then view) data from Salesforce using Heroku Connect.
+It supports the [Getting Started on Heroku with Heroku Connect](https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev) article - go check it out.
 
-It supports a Getting Started article on Heroku Dev Center that shows how to set up and manage an app without requiring you to install any development tools.
+The article demonstrates how to set up and manage this app without requiring you to install any development tools.
 
 # Deploy
 
 The easiest way to deploy this is to push the button:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
 
 # Verified
 
