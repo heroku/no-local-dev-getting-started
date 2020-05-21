@@ -13,10 +13,9 @@ class Contact < ActiveRecord::Base
  self.table_name = 'salesforce.contact'
 end
 # Start - Added by Deep
-#class Account < ActiveRecord::Base
- # self.table_name = 'salesforce.account'
-#end
-# end - Added by Deep
+class Account < ActiveRecord::Base
+ self.table_name = 'salesforce.account'
+end
 
 #get "/contacts" do
 #  @contacts = Contact.all
@@ -27,12 +26,10 @@ get "/contacts" do
   erb :index
 end
 # Start - Added by Deep
-#get "/accts" do
-  #@accts = Account.all
-  #erb :index
-#end
-# End - Added by Deep
-
+get "/accounts" do
+  @accounts = Account.all
+  erb :index
+end
 
 get "/create" do
   dashboard_url = 'https://dashboard.heroku.com/'
