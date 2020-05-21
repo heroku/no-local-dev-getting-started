@@ -10,7 +10,7 @@ get "/" do
 end
 
 class Contact < ActiveRecord::Base
- self.table_name = 'salesforce.contact'
+ self.table_name = 'salesforce.account'
 end
 # Start - Added by Deep
 #class Account < ActiveRecord::Base
