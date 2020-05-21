@@ -9,29 +9,28 @@ get "/" do
   erb :home
 end
 
-
-#class Contact < ActiveRecord::Base
- # self.table_name = 'salesforce.contact'
-#end
-# Start - Added by Deep
-class Account < ActiveRecord::Base
-  self.table_name = 'salesforce.account'
+class Contact < ActiveRecord::Base
+ self.table_name = 'salesforce.contact'
 end
+# Start - Added by Deep
+#class Account < ActiveRecord::Base
+ # self.table_name = 'salesforce.account'
+#end
 # end - Added by Deep
 
 #get "/contacts" do
 #  @contacts = Contact.all
 #  erb :index
 #end
-#get "/contacts" do
- # @contacts = Contact.all
- # erb :index
-#end
-# Start - Added by Deep
-get "/accts" do
-  @accts = Account.all
+get "/contacts" do
+ @contacts = Contact.all
   erb :index
 end
+# Start - Added by Deep
+#get "/accts" do
+  #@accts = Account.all
+  #erb :index
+#end
 # End - Added by Deep
 
 
