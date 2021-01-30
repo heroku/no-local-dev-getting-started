@@ -10,7 +10,7 @@ get "/" do
 end
 
 
-class Contact < ActiveRecord::Base
+class ApplicationController < ActiveRecord::Base
   self.table_name = 'salesforce.contact'
 end
 
