@@ -1,26 +1,27 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (6.0.0)
-      activesupport (= 6.0.0)
-    activerecord (6.0.0)
-      activemodel (= 6.0.0)
-      activesupport (= 6.0.0)
-    activesupport (6.0.0)
+    activemodel (6.1.1)
+      activesupport (= 6.1.1)
+    activerecord (6.1.1)
+      activemodel (= 6.1.1)
+      activesupport (= 6.1.1)
+    activesupport (6.1.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
-      zeitwerk (~> 2.1, >= 2.1.8)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
     bond (0.5.1)
-    concurrent-ruby (1.1.5)
-    i18n (1.7.0)
+    concurrent-ruby (1.1.8)
+    i18n (1.8.7)
       concurrent-ruby (~> 1.0)
-    minitest (5.12.2)
-    mustermann (1.0.3)
+    minitest (5.14.3)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     pg (1.1.4)
-    rack (2.0.7)
-    rack-protection (2.0.7)
+    rack (2.2.3)
+    rack-protection (2.1.0)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -32,24 +33,24 @@ GEM
       rack (>= 1.0)
       rack-test (~> 0.6.2)
       ripl (>= 0.7.0)
-    sinatra (2.0.7)
+    ruby2_keywords (0.0.4)
+    sinatra (2.1.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.7)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
       tilt (~> 2.0)
-    sinatra-activerecord (2.0.14)
-      activerecord (>= 3.2)
+    sinatra-activerecord (2.0.22)
+      activerecord (>= 4.1)
       sinatra (>= 1.0)
-    thread_safe (0.3.6)
     tilt (2.0.10)
     tux (0.3.0)
       ripl (>= 0.3.5)
       ripl-multi_line (>= 0.2.4)
       ripl-rack (>= 0.2.0)
       sinatra (>= 1.2.1)
-    tzinfo (1.2.5)
-      thread_safe (~> 0.1)
-    zeitwerk (2.2.0)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
+    zeitwerk (2.4.2)
 
 PLATFORMS
   ruby
@@ -62,7 +63,7 @@ DEPENDENCIES
   tux
 
 RUBY VERSION
-   ruby 2.6.5p114
+   ruby 2.7.2p137
 
 BUNDLED WITH
-   2.0.2
+   2.1.4
