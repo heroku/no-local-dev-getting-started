@@ -22,7 +22,7 @@ GEM
     pg (1.4.5)
     puma (6.0.0)
       nio4r (~> 2.0)
-    rack (2.2.4)
+    rack (2.2.6.4)
     rack-protection (3.0.4)
       rack
     rack-test (0.6.3)
