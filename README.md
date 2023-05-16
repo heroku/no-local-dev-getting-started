@@ -10,8 +10,7 @@ The article demonstrates how to set up and manage this app without requiring you
 
 The easiest way to deploy this is to push the button:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/heroku/no-local-dev-getting-started)
 # Verified
 
 If you are not yet a Heroku verified account holder, clicking the Heroku button will prompt you to sign up for Heroku first, and enter billing details.  These details are required for abuse prevention - running this app in the standard configuration won't incur any costs.
