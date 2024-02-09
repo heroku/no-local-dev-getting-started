@@ -10,3 +10,5 @@ gem 'puma'
 
 # a little console
 gem "tux"
+
+gem "rackup", "~> 2.1"

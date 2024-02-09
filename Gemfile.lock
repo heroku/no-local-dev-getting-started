@@ -42,6 +42,9 @@ GEM
       rack (>= 3.0.0)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rackup (2.1.0)
+      rack (>= 3)
+      webrick (~> 1.8)
     ripl (0.7.1)
       bond (~> 0.5.1)
     ripl-multi_line (0.3.1)
@@ -69,6 +72,7 @@ GEM
       sinatra (>= 1.2.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    webrick (1.8.1)
 
 PLATFORMS
   ruby
@@ -77,6 +81,7 @@ DEPENDENCIES
   activerecord
   pg
   puma
+  rackup (~> 2.1)
   sinatra
   sinatra-activerecord
   tux
