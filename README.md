@@ -14,7 +14,7 @@ The easiest way to deploy this is to push the button:
 
 # Verified
 
-If you are not yet a Heroku verified account holder, clicking the Heroku button will prompt you to sign up for Heroku first, and enter billing details.  These details are required for abuse prevention - running this app in the standard configuration won't incur any costs.
+If you are not yet a Heroku verified account holder, clicking the Heroku button will prompt you to sign up for Heroku first, and enter billing details. Running this demo will incur in costs of [Eco](https://devcenter.heroku.com/articles/eco-dyno-hours) dynos, and Heroku Postgres [mini](https://elements.heroku.com/addons/heroku-postgresql).
 
 # Running
 

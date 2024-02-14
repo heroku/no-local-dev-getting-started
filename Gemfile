@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "3.1.2"
+ruby "3.2.3"
 
 gem "sinatra" 
 gem "activerecord" 
@@ -10,3 +10,5 @@ gem 'puma'
 
 # a little console
 gem "tux"
+
+gem "rackup", "~> 2.1"
