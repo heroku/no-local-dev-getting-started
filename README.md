@@ -10,8 +10,7 @@ The article demonstrates how to set up and manage this app without requiring you
 
 The easiest way to deploy this is to push the button:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/heroku/no-local-dev-getting-started)
 # Verified
 
 If you are not yet a Heroku verified account holder, clicking the Heroku button will prompt you to sign up for Heroku first, and enter billing details. Running this demo will incur in costs of [Eco](https://devcenter.heroku.com/articles/eco-dyno-hours) dynos, and Heroku Postgres [mini](https://elements.heroku.com/addons/heroku-postgresql).
